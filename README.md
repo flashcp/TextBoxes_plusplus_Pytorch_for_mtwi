@@ -14,6 +14,7 @@
  * torchvision          0.5.0+cu92  <br>
  * Google colab默认环境可正常运行  <br>
 ### 五、使用方法
+ 参数设置可以参考train.py，test_mtwi.py 文件中的parser参数，以下是两个示例。
  1. train:  <br>
  ``!python train.py --dataset mtwi384 --dataset_root /content/mtwi_2018_train --batch_size 8 --lr 1e-4``  <br>
  2. test:   <br>
