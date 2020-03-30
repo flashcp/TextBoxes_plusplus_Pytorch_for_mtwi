@@ -23,7 +23,7 @@
 ### 七、文章地址
   原始仓库[TextBoxes_plusplus](https://github.com/MhLiao/TextBoxes_plusplus)<br>
   文章地址[TextBoxes++: A Single-Shot Oriented Scene Text Detector](https://arxiv.org/abs/1801.02765)<br>
-  
+  Cite:<br>
   `` @article{Liao2018Text,
   title = {{TextBoxes++}: A Single-Shot Oriented Scene Text Detector},
   author = {Minghui Liao, Baoguang Shi and Xiang Bai},
