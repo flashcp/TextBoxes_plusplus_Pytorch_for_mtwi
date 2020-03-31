@@ -464,7 +464,6 @@ class SSDAugmentation(object):
             Expand(self.mean),
             # 随机裁剪
             RandomSampleCrop(),
-            # RandomMirror(),
             ToPercentCoords(),
             Resize(self.size),
             # 自然图像是一种平稳的数据分布，减去数据对应维度的统计平均值，来消除公共的部分，以凸显个体之间的特征和差异
