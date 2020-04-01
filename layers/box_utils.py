@@ -326,10 +326,10 @@ def nms(boxes, scores, overlap=(0.5, 0.2), top_k=200):
     # 返回元素数目
     if boxes.numel() == 0:
         return keep
-    x1 = boxes[:, 0] - boxes[:, 2] / 2
-    y1 = boxes[:, 1] - boxes[:, 3] / 2
-    x2 = boxes[:, 0] + boxes[:, 2] / 2
-    y2 = boxes[:, 1] + boxes[:, 3] / 2
+    x1 = boxes[:, 0:7:2].min(-1).values
+    y1 = boxes[:, 1:8:2].min(-1).values
+    x2 = boxes[:, 0:7:2].max(-1).values
+    y2 = boxes[:, 1:8:2].max(-1).values
 
     area_f = torch.mul(x2 - x1, y2 - y1)
     # 预选框排名，升序
