@@ -39,10 +39,11 @@ class MTWIAnnotationTransform(object):
         res = []
         for obj in target:
             obj_list = obj.strip().split(',')
+            if obj_list[8] == '###':
+                continue
             name = 'text'
             bndbox = []
             for i, pt in enumerate(obj_list[:8]):
-                # cur_pt = float(pt)-1
                 cur_pt = float(pt)
                 # scale height or width
                 cur_pt = cur_pt / width if i % 2 == 0 else cur_pt / height
