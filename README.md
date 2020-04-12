@@ -21,6 +21,7 @@
  ``!python test_mtwi.py --trained_model weights/ssd384_mtwi_90000.pth --save_folder test/sample_task2 --visual_threshold 0.18 --mtwi_root /content/mtwi_2018_task2_test``<br>
 ### 六、结果
   MTWI 2018 挑战赛中的结果Precision:0.629，Recall:0.365  <br>
+  ![Image text](https://github.com/flashcp/TextBoxes_plusplus_Pytorch_for_mtwi/blob/master/demo/2.png)
 ### 七、文章地址
   原始仓库[TextBoxes_plusplus](https://github.com/MhLiao/TextBoxes_plusplus)<br>
   文章地址[TextBoxes++: A Single-Shot Oriented Scene Text Detector](https://arxiv.org/abs/1801.02765)<br>
